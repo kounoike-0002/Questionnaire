@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+            <title>アンケートにご協力下さい！</title>
+    </head>
+        <body>
+            <h1>アンケートにご協力下さい！</h1>
+            <form method="post" action="questionnaire.jsp">
+                性別<br>
+                <input type="radio" name = "sex" value="M" checked="checked" />男<br>
+                <input type="radio" name = "sex" value="W" />女<br>
+                年齢<br>
+                <input type="number" name = "old"  />歳<br>
+                職業<br>
+                <select name="occupation">
+                    <option value="1" selected="selected">公務員</option>
+                    <option value="2" selected="selected">学生</option>
+                    <option value="3" selected="selected">会社員</option>
+                    <option value="4" selected="selected">社長</option>
+                    <option value="5" selected="selected">総理大臣</option>
+                    <option value="6" selected="selected">パイロット</option>
+                    <option value="7" selected="selected">大統領</option>
+                    <option value="8" selected="selected">宇宙飛行士</option>
+                    <option value="9" selected="selected">無職</option>
+                    <option value="10" selected="selected">その他</option>
+                </select>
+                <br>
+                今日の気分<br>
+                <textarea name="text" rows="5" cols="30"></textarea><br>
+                <input type="submit" value="送信">
+            </form>
+            <h2>ご協力ありがとうございました！</h2>
+
+        </body>
+</html>
